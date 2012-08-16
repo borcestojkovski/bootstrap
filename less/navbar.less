@@ -67,7 +67,6 @@
   .navbar-link {
     color: @navbarLinkColor;
     &:hover {
-      color: @navbarLinkColorHover;
     }
   }
   // Buttons in navbar
@@ -234,6 +233,8 @@
   background-color: @navbarLinkBackgroundHover; // "transparent" is default to differentiate :hover from .active
   color: @navbarLinkColorHover;
   text-decoration: none;
+        color: @navbarLinkColorHover;
+      border-bottom:3px solid @blue;
 }
 
 // Active nav items
@@ -244,6 +245,7 @@
   text-decoration: none;
   background-color: @whiteDark; // original: @navbarLinkBackgroundActive;
   background-color: rgba(0,0,0,.1);
+  border-bottom:3px solid transparent;  // Borce
 }
 
 // Dividers (basically a vertical hr)

@@ -2,21 +2,40 @@
 // ---------
 
 .hero-unit {
-  padding: 60px;
+ /* padding: 60px;
   margin-bottom: 30px;
   background-color: @heroUnitBackground;
-  .border-radius(6px);
+  .border-radius(6px); */
+  text-align: center; // Borce
+  
   h1 {
     margin-bottom: 0;
     font-size: 60px;
     line-height: 1;
-    color: @heroUnitHeadingColor;
+   // color: @heroUnitHeadingColor;
     letter-spacing: -1px;
+    
+     display:inline;
+     background-color:@black;
+     color:@white;
+  }
+    h2 {
+    display:inline;
+    margin-bottom: 0;
+    font-size: 50px;
+    line-height: 1.2;
+    //color: @black;
+    color:@white;
+    letter-spacing: -1px;
+    //background-color:@white;
+    background-color:@black;
   }
   p {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 200;
     line-height: @baseLineHeight * 1.5;
     color: @heroUnitLeadColor;
   }
+  
+  
 }

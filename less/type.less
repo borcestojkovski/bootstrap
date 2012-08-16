@@ -75,7 +75,7 @@ h6 {
 
 // Page header
 .page-header {
-  padding-bottom: @baseLineHeight - 1;
+  padding-bottom: @baseLineHeight - 10; // Original -1
   margin: @baseLineHeight 0;
   border-bottom: 1px solid @grayLighter;
 }
@@ -112,6 +112,7 @@ ul.unstyled,
 ol.unstyled {
   margin-left: 0;
   list-style: none;
+  font-size: 18px; //Borce
 }
 
 // Description Lists
@@ -125,6 +126,7 @@ dd {
 dt {
   font-weight: bold;
   line-height: @baseLineHeight - 1; // fix jank Helvetica Neue font bug
+  font-size: 18px; //Borce
 }
 dd {
   margin-left: @baseLineHeight / 2;
