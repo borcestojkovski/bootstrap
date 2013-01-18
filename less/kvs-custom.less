@@ -51,20 +51,12 @@ hr.soften {
 }
 */
 
-.kvslead {
-  margin-bottom: @baseLineHeight;
-  font-size: 40px;
-  font-weight: 200;
-  line-height: @baseLineHeight * 1.5;
-  color:@pink;
-}
-
 .pink-box {
     background:@pink;
     color:@white;
 }
 
-.background-services, .background-company {
+.background-services, .background-company, .background-contact {
   //  background-color: spin(@btnPrimaryBackground, 15%);
  /* h2, h3 {
       color:@pink;
@@ -91,8 +83,52 @@ hr.soften {
 
 .background-company {
     h1, h2, h3 {
-        color: green; //#005514;
+        color: @green; //#005514;
   }
 }
 
+.background-contact {
+    h1, h2, h3 {
+        color: @orange; //#005514;
+  }
+}
+
+.centered-unit {
+ /* padding: 60px;
+  margin-bottom: 30px;
+  background-color: @heroUnitBackground;
+  .border-radius(6px); */
+  text-align: center; // Borce
+  
+  h1 {
+    margin-bottom: 0;
+    font-size: 60px;
+    line-height: 1;
+   // color: @heroUnitHeadingColor;
+    letter-spacing: -1px;
+    
+     display:inline;
+     background-color:@black;
+     color:@white;
+  }
+    h2 {
+    display:inline;
+    margin-bottom: 0;
+    font-size: 50px;
+    line-height: 1.2;
+    //color: @black;
+    color:@white;
+    letter-spacing: -1px;
+    //background-color:@white;
+    background-color:@black;
+  }
+  p {
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 50px * 1.5;
+    color: @blue;
+  }
+  
+  
+}
 

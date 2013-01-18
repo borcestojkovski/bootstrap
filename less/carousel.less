@@ -5,6 +5,7 @@
   position: relative;
   margin-bottom: @baseLineHeight;
   line-height: 1;
+  text-align: center; //added by borce
 }
 
 .carousel-inner {
@@ -72,15 +73,16 @@
   width: 40px;
   height: 40px;
   margin-top: -20px;
-  font-size: 60px;
-  font-weight: 100;
+  font-size: 120px; // original 60
+  font-weight: 200; // original 100
   line-height: 30px;
   color: @white;
   text-align: center;
-  background: @grayDarker;
-  border: 3px solid @white;
+  font-family: @serifFontFamily; //added by borce
+  //background: @grayDarker;
+  //border: 3px solid @white;
   .border-radius(23px);
-  .opacity(50);
+  .opacity(70); //original 50
 
   // we can't have this transition here
   // because webkit cancels the carousel
@@ -99,7 +101,7 @@
   &:hover {
     color: @white;
     text-decoration: none;
-    .opacity(90);
+    .opacity(95); //original: 90
   }
 }
 
@@ -114,8 +116,25 @@
   padding: 10px 15px 5px;
   background: @grayDark;
   background: rgba(0,0,0,.75);
+ // background: rgba(0,178,255,.75); blue background
+  
 }
-.carousel-caption h4,
+
+.carousel-caption h1 {
+ color:@white;
+ letter-spacing: -1px;
+ font-size: 56px;
+ font-weight: 400;
+ line-height: 1;   
+}
+
 .carousel-caption p {
-  color: @white;
+  // following added by borce
+  padding-top: 10px;
+  font-size: 28px;
+  font-weight: 200;
+  line-height: @baseLineHeight * 1.5;
+  color:#ae5532;
 }
+
+
