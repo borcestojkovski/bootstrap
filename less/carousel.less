@@ -116,19 +116,19 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 10px 15px 5px;
-  background: @grayDark;
-  background: rgba(255,255,255,.75); 
+  padding: 10px 15px 10px; //10 15 5
+ /* background: @grayDark;
+  background: rgba(255,255,255,.55); */
  // background: rgba(0,178,255,.75); blue background
   
 }
 
 .carousel-caption h1 {
- color:@black;
+ color:@white;
  letter-spacing: -1px;
  font-size: 56px;
  //font-weight: 600;
- text-shadow: 0 1px 1px rgba(255,255,255,.25);
+ text-shadow: 0 1px 1px rgba(0,0,0,.25);
  line-height: 1;   
  font-family: @kvsIntroFont;
 }
@@ -139,11 +139,33 @@
   font-size: 28px;
   font-family: @kvsIntroFont;
   //font-weight: 200;
-  line-height: @baseLineHeight * 1.5;
+  line-height: @baseLineHeight * 2; //1.5
   //color:#ae5532;
   // new
-  //text-shadow: 0 1px 1px rgba(0,0,0,.75);
-  color: @grayDark;
+  text-shadow: 0 1px 1px rgba(0,0,0,.25);
+  
+}
+
+.first_element_h {
+    color: @white;   
+}
+
+.first_element_p, {
+    color: @whiteDark;
+}
+
+.second_element_h, .second_element_p {
+    background: @black;
+    background: rgba(0,0,0,.35);
+    
+}
+
+.second_element_h {
+    color: @white;  
+}
+
+.second_element_p {
+    color: @whiteDark;   
 }
 
 
