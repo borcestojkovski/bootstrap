@@ -237,6 +237,18 @@
       border-bottom:3px solid @blue;
 }
 
+// Invisible nav items
+.navbar .nav .invisible > a,
+.navbar .nav .invisible > a:hover {
+    // Borce
+  color: @gray; //oringal: @navbarLinkColorActive;
+  text-decoration: none;
+ // background-color: @whiteDark; // original: @navbarLinkBackgroundActive;
+ // background-color: rgba(0,0,0,.1);
+  border-bottom:3px solid transparent;  // Borce
+}
+
+
 // Active nav items
 .navbar .nav .active > a,
 .navbar .nav .active > a:hover {

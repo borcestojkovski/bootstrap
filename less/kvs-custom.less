@@ -23,13 +23,23 @@ body {
 
 
 /* Faded out hr */
-hr.soften {
+hr.kvs {
   height: 1px;
+  margin: 24px 0;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,.1), rgba(0,0,0,0));
+  border: 0;
+}
+
+hr.soften {
+  height: 2px;
   margin: 54px 0;
-  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
-  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
-  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
-  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
   border: 0;
 }
 
@@ -52,6 +62,7 @@ hr.soften {
 .footer h4, p {
   
 }
+
 
 
 /*
@@ -96,9 +107,16 @@ hr.soften {
   }
 }
 
+
+
 .background-contact {
-    ul {
-       font-size: 12px;   
+    li {
+       font-size: @baseFontSize;
+       //line-height: normal;
+       //display: inline-block;
+       a {
+         color: @black;  
+       }
     }
     h1, h2, h3 {
         color: @orange; //#005514;
@@ -106,6 +124,15 @@ hr.soften {
   //  .box-shadow(~"0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1)");
  // .box-shadow(0 1px 0 rgba(0,0,0,.25));
 }
+/*
+.background-contact > li > a {
+  color: @black;
+}
+ *.background-contact > li > a:hover {
+  text-decoration: none;
+  background-color: @grayLighter;
+} */
+
 
 .right-unit
 {
@@ -152,3 +179,9 @@ hr.soften {
   
 }
 
+.footer_colors {
+    
+    h3 {
+    color: @black;
+    }
+}

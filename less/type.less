@@ -22,10 +22,12 @@ p {
 
 .kvslead {
   margin-bottom: @baseLineHeight;
-  font-size: 400px;
+  font-size: 40px;
   font-weight: 200;
   line-height: @baseLineHeight * 1.5;
-  color:@pink;
+  color:@black;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 // HEADINGS
@@ -134,7 +136,7 @@ dd {
 dt {
   font-weight: bold;
   line-height: @baseLineHeight - 1; // fix jank Helvetica Neue font bug
-  font-size: 18px; //Borce
+  font-size: @baseFontSize; //Borce
 }
 dd {
   margin-left: @baseLineHeight / 2;
@@ -143,13 +145,13 @@ dd {
 .dl-horizontal {
   dt {
     float: left;
-    width: 120px;
+    width: 270px;
     clear: left;
     text-align: right;
     .text-overflow();
   }
   dd {
-    margin-left: 130px;
+    margin-left: 280px;
   }
 }
 
